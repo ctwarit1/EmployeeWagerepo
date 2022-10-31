@@ -8,6 +8,8 @@ public class EmployeeWage {
 		int EMP_RATE_PER_HOUR = 20;
 		int empHrs = 0;
 		int empWage = 0;
+		int TotalWorkingDay=20;
+		int TotalWage=0;
 		// Computation
 		double empCheck=Math.floor(Math.random()*10)%2;
 		switch((int) empCheck) 
@@ -23,6 +25,8 @@ public class EmployeeWage {
 		}
 		empWage=empHrs*EMP_RATE_PER_HOUR;
 		System.out.println("emp wage: "+empWage);
+		TotalWage=empWage*TotalWorkingDay;
+		System.out.println("Total wage is: " + TotalWage);
 				
 	}
 }
